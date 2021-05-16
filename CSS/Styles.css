@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
+:root {
+    --primary-bg-main: hsl(233, 47%, 7%);
+    --primary-bg-card: hsl(244, 38%, 16%);
+    --primary-text-accent: hsl(277, 64%, 61%);
+
+    --secondary-text-attribution: hsl(228, 45%, 44%);
+
+    --neutral-text-white: hsl(0, 0%, 100%);
+    --neutral-text-main: hsla(0, 0%, 100%, 0.75);
+    --neutral-text-stat: hsla(0, 0%, 100%, 0.6);
+    --neutral-image-overlay: hsla(277, 77%, 55%, 0.6);
+}
+
 *,
 *::before,
 *::after {
@@ -9,8 +22,8 @@
 }
 
 body {
-    background-color: hsl(233, 47%, 7%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--primary-bg-main);
+    color: var(--neutral-text-white);
     font-family: 'Inter', sans-serif;
     font-size: 1.375rem;
     padding: 5.5rem 1.5rem;
@@ -18,7 +31,7 @@ body {
 }
 
 .card {
-    background-color: hsl(244, 38%, 16%);
+    background-color: var(--primary-bg-card);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -41,7 +54,7 @@ body {
     right: 0;
     bottom: 5px;
     left: 0;
-    background: hsla(277, 77%, 55%, 0.6);
+    background: var(--neutral-image-overlay);
 }
 
 .hero--image {
@@ -54,14 +67,14 @@ body {
 }
 
 .accent {
-    color: hsl(277, 64%, 61%);
+    color: var(--primary-text-accent);
     font-style: normal;
 }
 
 .card--main {
-    color: hsla(0, 0%, 100%, 0.75);
+    color: var(--neutral-text-main);
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 15px;
     padding: 0 2.5rem 0 2.5rem;
     line-height: 1.5rem;
 }
@@ -84,7 +97,7 @@ body {
 }
 
 .card--stats-upper {
-    color: hsla(0, 0%, 100%, 0.6);
+    color: var(--neutral-text-stat);
     text-transform: uppercase;
     font-size: 0.85rem;
 }
@@ -99,7 +112,7 @@ body {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--secondary-text-attribution);
 }
 
 @media (min-width: 1440px) {

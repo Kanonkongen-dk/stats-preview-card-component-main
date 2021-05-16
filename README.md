@@ -44,13 +44,13 @@ Users should be able to:
 
 ### What I learned
 
-Having been away from frontend development for a long while and also since I don't do it for a living - this challenge was more about getting the rust cleaned off and getting slowly up to speed again.
+Since I have only been working with server side code for almost a year now, this challenge was more about getting the CSS-rust cleaned off and getting slowly up to speed again on frontend coding.
 
-Also, working from a pre-defined layout is not something I have done often, so that was a good experience having a layout I didn't have to come up with myself. I have often found myself getting tired of a project, if I had to design it myself first.
+Also, working from a pre-defined layout is not something I have done often, so that was a good experience having a layout I didn't have to come up with myself. I have often found myself getting tired of a project, if I had to design it myself first. I just find coding a lot more fun than designing.
 
 ### Continued development
 
-As expected when I got started on this project, flexbox caused me most headaches. Flexbox is definitely something I need to work a lot more on.
+As expected when I got started on this project, flexbox and image handling caused me most headaches. This is definitely something I need to work a lot more on.
 
 ## Author
 
