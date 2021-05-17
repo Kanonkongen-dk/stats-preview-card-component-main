@@ -32,6 +32,8 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    max-width: 654px;
+    margin: auto;
 }
 
 .hero,
@@ -121,7 +123,6 @@ body {
 
 @media (min-width: 1440px) {
     body {
-        /* font-size: 34px; */
         padding: 11rem 10.25rem;
     }
     
