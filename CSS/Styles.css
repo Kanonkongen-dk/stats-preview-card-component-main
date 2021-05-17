@@ -10,7 +10,6 @@
     --neutral-text-white: hsl(0, 0%, 100%);
     --neutral-text-main: hsla(0, 0%, 100%, 0.75);
     --neutral-text-stat: hsla(0, 0%, 100%, 0.6);
-    --neutral-image-overlay: hsla(277, 77%, 55%, 0.6);
 }
 
 *,
@@ -25,9 +24,7 @@ body {
     background-color: var(--primary-bg-main);
     color: var(--neutral-text-white);
     font-family: 'Inter', sans-serif;
-    font-size: 1.375rem;
-    padding: 5.5rem 1.5rem;
-    position: relative;
+    padding: 88px 24px;
 }
 
 .card {
@@ -52,18 +49,20 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 5px;
+    bottom: 4px;
     left: 0;
-    background: var(--neutral-image-overlay);
+    background: var(--primary-text-accent);
+    mix-blend-mode: multiply;
 }
 
 .hero--image {
-    width: 100%;
+    max-width: 100%;
 }
 
 .card--heading {
-    padding: 2.8125rem 2.125rem 1.375rem 2.125rem;
+    padding: 39px 34px 22px;
     text-align: center;
+    font-size: 1.75rem;
 }
 
 .accent {
@@ -75,31 +74,36 @@ body {
     color: var(--neutral-text-main);
     text-align: center;
     font-size: 15px;
-    padding: 0 2.5rem 0 2.5rem;
-    line-height: 1.5rem;
+    padding: 0 34px;
+    line-height: 28px;
 }
 
 .card--stats {
-    font-family: 'Lexend Deca', sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 3rem 0 0 0;
+    margin: 49px 0 38px;
 }
 
 .card--stats dt {
     font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: 0.4rem;
 }
 
 .card--stats dd {
+    letter-spacing: 1px;
     margin-bottom: 2rem;
+}
+
+.card--stats dd:last-of-type {
+    margin-bottom: 0;
 }
 
 .card--stats-upper {
     color: var(--neutral-text-stat);
     text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: 12px;
 }
 
 .attribution {
@@ -117,13 +121,14 @@ body {
 
 @media (min-width: 1440px) {
     body {
-        font-size: 1.75rem;
+        /* font-size: 34px; */
         padding: 11rem 10.25rem;
     }
     
     .card {
         flex-direction: row;
         max-height: 448px;
+        max-width: 1113px;
     }
 
     .hero,
@@ -135,7 +140,8 @@ body {
     .hero {
         order: 2;
         flex: 1 0 auto;
-        width: 50%;
+        width: 52%;
+        max-width: 543px;
     }
 
     .hero::before {
@@ -143,35 +149,35 @@ body {
     }
 
     .hero--image {
-        height: 100%;
+        width: 100%;
     }
 
     .card-body {
         order: 1;
         flex: 1 0 auto;
-        width: 50%;
     }
 
     .card--heading {
-        padding: 4.9375rem 4.5rem 2rem 4.5rem;
+        font-size: 34px;
+        padding: 71px 75px 24px;
         text-align: left;
     }
 
     .card--main {
         text-align: left;
-        padding: 0 8rem 0 4.5rem;
+        padding: 0 122px 0 75px;
     }
 
     .card--stats {
         flex-direction: row;
         flex-wrap: wrap;
         text-align: left;
-        margin: 5rem 0 4.9375rem 4.5rem;
+        margin: 70px 0 0 75px;
     }
 
     .card--stats dt {
         order: 1;
-        margin-bottom: 0;
+        margin-bottom: 7px;
         width: 27%;
     }
     

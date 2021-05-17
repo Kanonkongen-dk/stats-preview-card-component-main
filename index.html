@@ -10,14 +10,12 @@
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
-  <article class="card">
-    <section class="hero">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./images/image-header-desktop.jpg">
-        <img class="hero--image" src="./images/image-header-mobile.jpg" alt="Cozy office environment with colleagues working and having fun">
-      </picture>
-    </section>
-    <section class="card--body">
+  <main class="card">
+    <picture class="hero">
+      <source media="(min-width: 1440px)" srcset="./images/image-header-desktop.jpg">
+      <img class="hero--image" src="./images/image-header-mobile.jpg" alt="Cozy office environment with colleagues working and having fun">
+    </picture>
+    <article>
         <h1 class="card--heading">Get <b class="accent">insights</b> that help your business grow.</h1>
 
         <p class="card--main">Discover the benefits of data analytics and make better decisions regarding revenue, customer
@@ -31,9 +29,8 @@
           <dt>12M+</dt>
           <dd class="card--stats-upper">queries</dd>
         </dl>
-
-    </section>
-  </article>
+    </article>
+  </main>
 
   <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
